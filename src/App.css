@@ -1,0 +1,23 @@
+:root{
+    --primary-color: #5448C8;
+    --secondary-color: #1a1625; 
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto', sans-serif
+
+}
+
+body{
+    font-family: var(--primary-font)
+}
+
+
+.primary-btn{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+
+}
+
+.secondary-btn{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+}
