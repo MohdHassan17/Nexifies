@@ -33,7 +33,9 @@
 }
 
 
-/* Slide Heading */
+/* About Us Section - Landing  */
+
+
 
 
 
@@ -82,7 +84,7 @@
     .carousel-slide {
         height: 300px; /* Adjust for smaller screens */
     }
-    .slide-heading {
+    .slide-heading-container {
         font-size: 1.5rem;
     }
 }
@@ -91,7 +93,7 @@
     .carousel-slide {
         height: 200px;
     }
-    .slide-heading {
+    .slide-heading-container {
         font-size: 1rem;
     }
 }
