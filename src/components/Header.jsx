@@ -98,21 +98,6 @@ export default function Header() {
                     {navigation.map((item) =>
                   item.name === 'Services' ? (
                     <div className="" key={item.name}>
-                      <button
-                        className={classNames(
-                          'hover:bg-gray-300',
-                          'rounded-md px-3 py-2 text-sm font-medium dropdown-button'
-                        )}
-                      >
-                        {item.name}
-                      </button>
-
-                      <div className="dropdown-menu">
-                        <a href="" className="dropdown-links">Something</a>
-                        <a href="" className="dropdown-links">Something</a>
-                        <a href="" className="dropdown-links">Something</a>
-                        <a href="" className="dropdown-links">Something</a>
-                      </div>
                      
                   
                     </div>

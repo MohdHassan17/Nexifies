@@ -10,6 +10,20 @@ body{
     font-family: var(--primary-font)
 }
 
+.btn{
+    font-family: var(--secondary-font);
+    padding: 10px 16px;
+    color: white;
+    border-radius: 9px;
+    transition: 0.3s ease-in-out;
+    font-size:0.8rem;
+    font-weight: normal
+}
+
+.btn:hover{
+    transform: translateY(-3px)
+
+}
 
 .primary-btn{
     font-family: 'Poppins', sans-serif;
