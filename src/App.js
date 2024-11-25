@@ -13,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Testimonial from './pages/Testimonial'
 import Career from './pages/Career'
+import ContactPage from './pages/ContactPage'
 
 // Image Imports
 
@@ -102,8 +103,9 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
 
   return (
     <div className="App">
-      <Header />
+      
       <BrowserRouter>
+      <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about-us" element={<AboutUs />} />
@@ -112,6 +114,7 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
           ))}
           <Route path="/testimonials" element={<Testimonial/>}/>
           <Route path='/careers' element={<Career/>}/>
+          <Route path="/contact-us" element={<ContactPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

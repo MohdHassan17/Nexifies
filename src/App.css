@@ -9,6 +9,7 @@
 body{
     font-family: var(--primary-font);
     overflow-x:hidden;
+    color: var(--secondary-color);
 }
 
 
@@ -92,4 +93,10 @@ body{
 .secondary-btn{
     font-family: 'Poppins', sans-serif;
     background-color: var(--secondary-color);
+}
+
+.text-with-icon{
+    display: inline-flex;
+    vertical-align: middle;
+    gap: 5px;
 }

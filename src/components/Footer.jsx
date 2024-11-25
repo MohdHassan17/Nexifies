@@ -18,7 +18,8 @@ function Footer() {
 
     <div className="footer-container">
 
-    <div className="footer-contact-form-container bg-primary rounded-lg">
+    
+    {!hideExtraComponent && <div className="footer-contact-form-container bg-primary rounded-lg">
         <div className="footer-contact-form-wrapper bg-white ">
 
             <div className="contact-img-container">
@@ -41,7 +42,9 @@ function Footer() {
 
         </div>
 
-    </div>
+    </div>}
+
+    
 
 
     <footer class="text-gray-600 body-font bg-secondary pt-10">

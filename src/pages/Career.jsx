@@ -18,14 +18,34 @@ function Career() {
 
     <section className="section py-24">
         <div className="career-card-container">
-          <div className="career-card">
+          <div className="career-card rounded-lg bg-indigo-100">
             <div className="career-heading-container">
-              <h1>Senior Full-Stack Developer</h1>
+              <h1 className='career-card-heading'>Senior Full-Stack Developer</h1>
               <div className="career-location-timing">
-                <h5 className="career-location"> <FaLocationDot/> $nbsp; Karachi </h5>
-                <h5 className="career-timing"> <FaCalendarAlt/> $nbsp; Full Time </h5>
+                <h5 className="career-location text-with-icon"> <FaLocationDot style={{color:"var(--primary-color)"}} /> Karachi </h5>
+                <h5 className="career-timing text-with-icon"> <FaCalendarAlt style={{color:"var(--primary-color)"}}/>  Full Time </h5>
               </div>
             </div>
+            <div className="career-qualification-container">
+              <h1 className="career-heading">Qualification:</h1>
+              <ul className="career-qualification-list">
+                <li className="career-qualification-item">Bachelor's degreed in Computer Science/IT</li>
+                <li className="career-qualification-item">At least 3-4 years of experience in the field</li>
+                <li className="career-qualification-item">Able to operate various development tools (Git, Cloud Tools etc.)</li>
+                <li className="career-qualification-item">Excellent communication and time management</li>
+               
+              </ul>
+            </div>
+            <div className="career-skills-container">
+              <h1 className='career-heading'>Job Skills:</h1>
+              <p className="career-skills-description">Proficiency in PHP, javascript, Bootstrap, MERN, JQuery, Python, with Restful APIs, with SQL and No SQL Database experience</p>
+            </div>
+
+            <div className="career-btn-container">
+              <a href="mailto:careers@nexifies.com" className='btn primary-btn'>Apply Now</a>
+
+            </div>
+
           </div>
         </div>
     </section>
