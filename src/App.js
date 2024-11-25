@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import Landing from "./pages/Landing";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
+import Testimonial from './pages/Testimonial'
+import Career from './pages/Career'
 
 // Image Imports
 
@@ -108,6 +110,8 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
           {servicePages.map((service) => (
             <Route key={service.id} path={`/services/${service.link}`} element={<Services serviceImg={service.img} serviceText={service.text} serviceName={service.name} />} />
           ))}
+          <Route path="/testimonials" element={<Testimonial/>}/>
+          <Route path='/careers' element={<Career/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
