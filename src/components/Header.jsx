@@ -1,15 +1,11 @@
-import { Fragment } from 'react'
+
 import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
+ 
 } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaInstagram , FaWhatsapp, FaTwitter, FaFacebook, FaLinkedin} from 'react-icons/fa'
 
 import Nexifies from '../images/Nexifies-Logo.png'

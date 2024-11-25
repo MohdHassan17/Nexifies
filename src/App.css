@@ -16,7 +16,13 @@ body{
     gap: 10px;
 }
 
+.text-primary{
+    color: var(--primary-color);
+}
 
+.text-secondary{
+    color: var(--secondary-color)
+}
 
 
 .bg-white{
@@ -31,6 +37,8 @@ body{
 .bg-secondary{
     background: var(--secondary-color);
 }
+
+
 
 .heading-1{
     color: var(--secondary-color);
@@ -52,7 +60,7 @@ body{
 
 .para-text{
     color: var(--secondary-color);
-    font-size: .85rem;
+    font-size: .9rem;
     font-weight: normal;
 }
 

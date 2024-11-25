@@ -1,0 +1,17 @@
+.page-banner{
+    height: 250px;
+    width: 100%;
+    background-image: url(/src/images/Banner-bg.jpg);
+    background-size: cover;
+    background-position:center ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-heading{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: whitesmoke;
+}

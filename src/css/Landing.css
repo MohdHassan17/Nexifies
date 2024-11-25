@@ -36,9 +36,6 @@
 /* About Us Section - Landing  */
 
 
-
-
-
 .slide-heading-container {
     position: absolute;
     top: 30%;
@@ -66,10 +63,148 @@
     width: 300px;
 }
 
+/* Client List Carousel Styles */
 
 
+.client-carousel {
+    position: relative; /* Acts as a positioning reference for buttons */
+    width: 100%; /* Full width of the carousel */
+  }
+  
+  .client-carousel-container {
+    position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .client-carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .client-carousel-item {
+    display: inline-block;
+    width: 30%;
+    height: 200px;
+    background-color: lightgray;
+    margin: 1.5%;
+  }
+  
+  .client-carousel-action {
+    position: absolute;
+    top: 50%; /* Center vertically relative to the carousel */
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    z-index: 2; /* Ensure it appears above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-carousel-action.left-action {
+    left: 10px; /* Position the left button */
+  }
+  
+  .client-carousel-action.right-action {
+    right: 10px; /* Position the right button */
+  }
+  
+  
+  
+/* Testimonial Carousel Styles */
 
+.test-carousel {
+    position: relative; /* Acts as a positioning reference for buttons */
+    width: 100%; /* Full width of the carousel */
+  }
+  
+  .test-carousel-container {
+    position: relative;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .test-carousel-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
+  .test-carousel-item {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    height: 400px;
+  
+    margin: 1.5%;
+  }
+  
+  .test-carousel-action {
+    position: absolute;
+    top: 50%; /* Center vertically relative to the carousel */
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: red;
+    z-index: 2; /* Ensure it appears above other elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .test-carousel-action.left-action {
+    left: 10px; /* Position the left button */
+  }
+  
+  .test-carousel-action.right-action {
+    right: 10px; /* Position the right button */
+  }
+  .test-text{
+    text-wrap: wrap;
+    text-align: justify;
+    text-justify: inter-word;
+  }
 
+  .test-client{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+
+    border-top: 1px solid lightslategrey;
+    padding: 5px
+  }
+
+  .test-client-img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .test-client-name{
+    font-size: 0.9rem;
+  }
 
 
 
@@ -81,11 +216,16 @@
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    
     .carousel-slide {
         height: 300px; /* Adjust for smaller screens */
     }
     .slide-heading-container {
         font-size: 1.5rem;
+    }
+
+    .client-carousel-item{
+        width: 95%;
     }
 }
 
