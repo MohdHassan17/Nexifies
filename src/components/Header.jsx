@@ -27,9 +27,15 @@ export default function Header() {
       href: "#",
       current: false,
       submenu: [
-        { name: "Web Development", href: "/services/web-development" },
-        { name: "Graphic Design", href: "/services/graphic-design" },
-        { name: "SEO Services", href: "/services/seo" },
+        { name: "CyberSecurity", href: "/services/cyber-security" },
+        { name: "RPA", href: "/services/robotic-process-automation" },
+        { name: "Chat Bots", href: "/services/chatbots" },
+        { name: "Financial Software", href: "/services/financial-software" },
+        { name: "Supplychain Solutions", href: "/services/supplychain-solutions" },
+        { name: "AI Solutions", href: "/services/ai-solutions" },
+        
+
+        
       ],
     },
     { name: "Testimonials", href: "/testimonials", current: false },

@@ -67,7 +67,7 @@
 }
 
 .contact-form-container{
-    flex:3;
+    flex:6;
 
     
 }
@@ -112,6 +112,24 @@
     background-color: var(--secondary-color);
     color: white;
     border-radius: 3px;
+}
+
+
+@media (max-width: 768px){
+
+
+    .footer-contact-form-wrapper{
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* .contact-img-container{
+        flex:
+    }
+
+    .contact-form-container{
+        flex: 6;
+    } */
 }
 
 

@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// Utils Import
+import ScrollToTop from "./utils/ScrollToTop";
+
 //Page Imports
 import Landing from "./pages/Landing";
 import AboutUs from "./pages/AboutUs";
@@ -25,10 +28,14 @@ import FinanceImg from "./images/finance-service.jpg";
 import SupplyImg from "./images/supply-chain-service.jpg";
 import AIImg from "./images/AI-service.png";
 
+
+
+
 function App() {
   const servicePages = [
     {
       id: 0,
+      link: "cyber-security",
       name: "Cyber Security",
       img: `${CyberImg}`,
       text: `In today’s digital age, where data drives every operation, protecting your business from cyber threats is more critical than ever. At Nexifies, we specialize in premier cybersecurity solutions designed to secure your digital world and empower your business to thrive.
@@ -75,7 +82,7 @@ With our AI-enhanced financial solutions, you’re not just keeping pace—you�
     {
       id: 4,
       link: "supplychain-solutions",
-      name: "Supply Chain Solutions",
+      name: "Supplychain Solutions",
       img: `${SupplyImg}`,
       text: `
 Here’s a cleaner, more refined version of the content:
@@ -88,7 +95,7 @@ With our AI-enhanced financial solutions, you’ll do more than keep up with the
     },
     {
       id: 5,
-      link: "supplychain-solutions",
+      link: "ai-solutions",
       name: "AI Solutions",
       img: `${AIImg}`,
       text: `Want to know what’s transforming the world of business? Nexifies’ advanced AI solutions are revolutionizing industries by bringing precision and intelligence to your fingertips. By leveraging cutting-edge artificial intelligence, we empower organizations to make smarter, data-driven decisions that boost efficiency, optimize resources, and drive exceptional results.
@@ -105,6 +112,7 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
     <div className="App">
       
       <BrowserRouter>
+      <ScrollToTop />
       <Header />
         <Routes>
           <Route path="/" element={<Landing />} />
