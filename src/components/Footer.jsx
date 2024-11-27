@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useLocation } from 'react-router-dom';
-
+import toast from 'react-hot-toast';
 
 //Image Import
 import Nexifies from '../images/Nexifies-Logo.png'
 import FooterImg from '../images/contact-form-img.svg'
+import { sendEmail } from '../utils/sendEmail';
+
 
 
 function Footer() {
@@ -13,6 +15,29 @@ function Footer() {
 
     // Determine if the extra component should be hidden based on the current path
     const hideExtraComponent = location.pathname === "/contact-us";
+
+
+    const form = useRef()
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+  
+      // Get form values
+      const formData = new FormData(form.current);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone')
+      const message = formData.get('message');
+  
+      // Validation logic
+      if (!name || !email || !message || !phone) {
+        toast.error('Please fill in all the fields before submitting.');
+        return;
+      }
+  
+      // Proceed with sending the email
+      sendEmail(form);
+    };
   return (
     <>
 
@@ -28,13 +53,13 @@ function Footer() {
 
             <div className="contact-form-container">
                 <h1 className="heading-1 text-center">Get In Touch Now</h1>
-                <form action="" class="footer-contact-form">
+                <form action="" class="footer-contact-form" ref={form} onSubmit={handleSubmit}>
                     <div className="input-field-container">
-                        <input type="text" placeholder='Name' className="input-field" />
-                        <input type="text" placeholder='Email' className="input-field" />
-                        <input type="text" placeholder='Phone' className="input-field" />
+                        <input type="text" placeholder='Name' name="name"className="input-field" />
+                        <input type="email" placeholder='Email' name='email' className="input-field" />
+                        <input type="tel" placeholder='Phone' name='phone' className="input-field" />
                     </div>
-                    <textarea name="" id="" className="form-msg"></textarea>
+                    <textarea name="message" id="" className="form-msg" placeholder="Message"></textarea>
                     <input type="submit" className="submit-btn"  />
 
                 </form>

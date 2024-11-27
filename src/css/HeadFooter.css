@@ -118,18 +118,32 @@
 @media (max-width: 768px){
 
 
-    .footer-contact-form-wrapper{
-        flex-direction: column;
-        height: auto;
+    .footer-container{
+        padding-top: 750px;
     }
 
-    /* .contact-img-container{
-        flex:
+    .footer-contact-form-wrapper{
+        flex-direction: column;
+        height: 800px;
+     
+    }
+
+    .input-field-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-field{
+        width: 100%;
+    }
+
+    .contact-img-container{
+        flex: 1
     }
 
     .contact-form-container{
-        flex: 6;
-    } */
+        flex: 1;
+    } 
 }
 
 

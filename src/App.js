@@ -1,6 +1,7 @@
 import "./App.css";
 
-// React Router Import
+// Library Import
+import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Header & Footer Import
@@ -27,6 +28,7 @@ import RPAImg from "./images/RPAImg.jpg";
 import FinanceImg from "./images/finance-service.jpg";
 import SupplyImg from "./images/supply-chain-service.jpg";
 import AIImg from "./images/AI-service.png";
+
 
 
 
@@ -110,7 +112,7 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
 
   return (
     <div className="App">
-      
+       <Toaster position="top-center" reverseOrder={false} />
       <BrowserRouter>
       <ScrollToTop />
       <Header />

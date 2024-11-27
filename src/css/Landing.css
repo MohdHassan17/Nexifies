@@ -257,9 +257,7 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     
-body{
-  background-color: red;
-}
+
 
 
     .carousel-slide {
