@@ -5,6 +5,7 @@ import PageBanner from '../components/PageBanner'
 
 //CSS Import
 import '../css/Testimonial.css'
+import ExploreServices from '../components/ExploreServices'
 
 function Testimonial() {
   return (
@@ -70,6 +71,8 @@ function Testimonial() {
 
     </section>
     
+
+    <ExploreServices/>
 
 
     </>

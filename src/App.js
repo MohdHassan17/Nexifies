@@ -18,6 +18,9 @@ import Services from "./pages/Services";
 import Testimonial from './pages/Testimonial'
 import Career from './pages/Career'
 import ContactPage from './pages/ContactPage'
+import ServicesPage from "./pages/ServicesPage";
+
+
 
 // Image Imports
 
@@ -119,12 +122,14 @@ Step into the future with Nexifies’ AI-powered solutions, where innovation mee
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/services" element={<ServicesPage/>}/>
           {servicePages.map((service) => (
             <Route key={service.id} path={`/services/${service.link}`} element={<Services serviceImg={service.img} serviceText={service.text} serviceName={service.name} />} />
           ))}
           <Route path="/testimonials" element={<Testimonial/>}/>
           <Route path='/careers' element={<Career/>}/>
           <Route path="/contact-us" element={<ContactPage/>}/>
+
         </Routes>
         <Footer />
       </BrowserRouter>

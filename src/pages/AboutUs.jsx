@@ -9,6 +9,7 @@ import PageBanner from "../components/PageBanner";
 // Image Imports
 import Shakeel from "../images/shakeel-raza.png";
 import SaudiPak from '../images/client-img/saudi-pak.png'
+import TestimonialCarousel from "../components/TestimonialCarousel";
 
 
 function AboutUs() {
@@ -35,7 +36,7 @@ function AboutUs() {
                   <img src={Shakeel} className="about-us-ceo" alt="" />
                 </div>
                 <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class=" mt-4 heading-2 ">Phoebe Caulfield</h2>
+                  <h2 class=" mt-4 heading-2 ">Shakeel Abidi</h2>
                   <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-2"></div>
                   <h5 class="text-secondary font-bold">CEO of Nexifies</h5>
                 </div>
@@ -75,48 +76,7 @@ function AboutUs() {
         </div>
       </section>
 
-      <section className="section py-24">
-      <SectionHeading subHeading="Testimonials" mainHeading="What Our Clients Say" />
-
-      <div className="test-carousel">
-          {/* Left Button */}
-          <span
-            className="test-carousel-action left-action"
-            onClick={() => scrollTestimonialCarousel("left")}
-          >
-            {"<"}
-          </span>
-
-          {/* Scrollable Content */}
-          <div
-            className="test-carousel-container "
-            id="test-carousel-container"
-          >
-            {[...Array(8)].map((_, i) => (
-              <div className="test-carousel-item bg-indigo-100 py-5 px-5 rounded-lg" key={i}>
-                <p className="para-text test-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi sed obcaecati labore tempore optio omnis aspernatur. Blanditiis illum velit quisquam odit laborum sed, odio aliquam aliquid ipsam? Tempore molestias doloribus explicabo fugit eveniet culpa, temporibus accusantium tempora quisquam optio fuga unde iste consequatur non, dicta cupiditate quia saepe esse assumenda ad, soluta aperiam? Suscipit ex, nostrum dicta perferendis quam quaerat temporibus similique, id culpa inventore magnam iusto commodi quo.
-                </p>
-                <div className="test-client">
-                  <img src={SaudiPak} alt="" className="test-client-img" />
-                  <div className="test-client-text">
-                    <h1 className="test-client-name heading-2">SOS Global</h1>
-                    <small className="test-client-title">SOS Global</small>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Right Button */}
-          <span
-            className="client-carousel-action right-action"
-            onClick={() => scrollTestimonialCarousel("right")}
-          >
-            {">"}
-          </span>
-        </div>
-      </section>
+      <TestimonialCarousel/>
     </>
   );
 }

@@ -79,10 +79,6 @@ export default function Header() {
               <span className="sr-only">WhatsApp</span>
             </a>
             <a href="#" className="text-gray-500 ms-5">
-              <FaTwitter />
-              <span className="sr-only">Twitter page</span>
-            </a>
-            <a href="#" className="text-gray-500 ms-5">
               <FaInstagram />
               <span className="sr-only">Instagram</span>
             </a>
@@ -94,7 +90,7 @@ export default function Header() {
         </span>
 
         <span className="logo-banner-phone">
-          <a href="mailto:webwarp@gmail.com">info@nexifies.com</a>
+          <a href="mailto:info@nexifies.com">info@nexifies.com</a>
         </span>
       </div>
 
@@ -123,7 +119,7 @@ export default function Header() {
                       src={Nexifies}
                       alt="Nexifies"
                     />
-                    <h1 className="nexifies-logo-text px-2">NEXIFIES</h1>
+                    <h1 className="nexifies-logo-text px-2 font-bold hidden sm:block">NEXIFIES</h1>
                   </div>
                   <div className="hidden sm:ml-6 md:block">
                     <div className="flex space-x-4 items-center">
@@ -135,7 +131,9 @@ export default function Header() {
                             onMouseEnter={() => setOpenSubMenuIndex(index)}
                             onMouseLeave={() => setOpenSubMenuIndex(null)}
                           >
-                            <button
+                          
+                            <a
+                            href="/services"
                               className={classNames(
                                 item.current
                                   ? "bg-white font-medium"
@@ -144,17 +142,17 @@ export default function Header() {
                               )}
                             >
                               {item.name}
-                            </button>
+                            </a>
                             {openSubMenuIndex === index && (
-                              <div className="absolute z-10 bg-white shadow-lg rounded-md">
+                              <div className="absolute z-10 bg-white top-10 shadow-lg rounded-md">
                                 {item.submenu.map((subitem) => (
                                   <a
                                     key={subitem.name}
                                     href={subitem.href}
                                     className={classNames(
                                       subitem.href === location.pathname
-                                        ? "text-blue-600"
-                                        : "text-gray-800 hover:text-blue-400",
+                                        ? "text-blue-600 text-sm"
+                                        : "text-gray-800 text-sm hover:text-blue-400",
                                       "block px-4 py-2"
                                     )}
                                   >

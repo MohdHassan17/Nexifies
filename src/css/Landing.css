@@ -60,7 +60,9 @@
     justify-content: left;
     gap:10px;
 
+    
     width: 300px;
+    margin-top:20px;
 }
 
 
@@ -258,7 +260,10 @@
 @media (max-width: 768px) {
     
 
-
+    .client-carousel-action, .test-carousel-action{
+      top: 100%;
+      transform: translateY(0);
+    }
 
     .carousel-slide {
         height: 300px; /* Adjust for smaller screens */
@@ -278,6 +283,10 @@
     }
     .slide-heading-container {
         font-size: 1rem;
+    }
+
+    .landing-carousel-btn{
+      font-size: .85rem;
     }
 }
 

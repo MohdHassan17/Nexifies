@@ -2,7 +2,7 @@ import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 
 export const sendEmail = (form) => {
-  const notify = () => toast('Message Sent Successfully');
+  const notify = () => toast.success('Message Sent Successfully');
 
   emailjs
     .sendForm('service_trskpjs', 'template_4pzh0nt', form.current, {

@@ -62,7 +62,7 @@ function Services({serviceImg, serviceName, serviceText}) {
           <div className="landing-about-us">
             <div className="landing-about-text mb-3">
               
-              <p className="para-text">
+              <p className="para-text text-justify">
                 {serviceText}
               </p>
             </div>
@@ -70,8 +70,9 @@ function Services({serviceImg, serviceName, serviceText}) {
           </div>
         </div>
         <div class="flex justify-center">
-          <button class="btn primary-btn">View Our Services</button>
-          <button class="btn secondary-btn">Contact Us Now</button>
+          <a href='/testimonials'><button class="btn primary-btn">Read Testimonials</button></a>
+          <a href='/contact-us'> <button class="btn secondary-btn">Contact Us Now</button></a>
+         
         </div>
       </div>
     </div>

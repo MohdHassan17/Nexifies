@@ -1,19 +1,46 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import PageBanner from '../components/PageBanner'
+import SectionHeading from '../components/SectionHeading'
+import { sendEmail } from '../utils/sendEmail'
+import toast from 'react-hot-toast'
 
 function ContactPage() {
+
+
+  const form = useRef()
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Get form values
+    const formData = new FormData(form.current);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const phone = formData.get('phone')
+    const message = formData.get('message');
+
+    // Validation logic
+    if (!name || !email || !message || !phone) {
+      toast.error('Please fill in all the fields before submitting.');
+      return;
+    }
+
+    // Proceed with sending the email
+    sendEmail(form);
+  };
+
+
+  
   return (
     <>
-    <PageBanner pageHeading="Contact Us"/>
+    <PageBanner pageHeading="Contact Us" />
 
     <section class="text-gray-600 body-font relative">
+     
   <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="sm:text-3xl text-2xl mb-4 heading-1">We Respond Within Minutes</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Do mention what service what you are interested in learning more about</p>
-    </div>
+  <SectionHeading subHeading="Get in Touch" mainHeading="We Respond Within Minutes"/>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
-      <form>
+      <form ref={form} onSubmit={handleSubmit}>
       <div class="flex flex-wrap -m-2">
         <div class="p-2 w-full">
           <div class="relative">
@@ -40,7 +67,7 @@ function ContactPage() {
           </div>
         </div>
         <div class="p-2 w-full">
-          <input value="Send Message" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center primary-btn"/>
+          <input value="Send Message" type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center primary-btn"/>
         </div>
        
       </div>

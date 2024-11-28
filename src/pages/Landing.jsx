@@ -67,7 +67,7 @@ export default function Landing() {
             <div key={slide.id} className="carousel-slide">
               <img
                 src={slide.img}
-                alt={`Slide ${slide.id}`}
+                alt={`Slide ${slide.heading}`}
                 className="carousel-image"
               />
               <div
@@ -78,10 +78,10 @@ export default function Landing() {
                 <h1 className="slide-heading-text"> {slide.heading}</h1>
 
                 <div className="slider-btn-container">
-                  <a href="#" className="btn primary-btn">
+                  <a href="#" className="btn primary-btn landing-carousel-btn">
                     Learn More
                   </a>
-                  <a href="#" className="btn secondary-btn">
+                  <a href="#" className="btn secondary-btn landing-carousel-btn">
                     Contact Now
                   </a>
                 </div>
@@ -109,7 +109,7 @@ export default function Landing() {
                   <h1 className="landing-about-heading heading-2 mb-2">
                     Who we are?
                   </h1>
-                  <p className="para-text">
+                  <p className="para-text text-justify">
                     In a world of continuous innovation and change, an era of
                     technological marvel, We drive to pave a path independent of
                     our predecessor through our latest tools, talents and
@@ -120,7 +120,7 @@ export default function Landing() {
                   <h1 className="landing-about-heading heading-2 mb-2">
                     What makes us different?
                   </h1>
-                  <p className="para-text">
+                  <p className="para-text text-justify">
                     Our resolute policy of quality and timely service delivery
                     adheres to all organizations irrespective of their scale.
                     Clientele satisfaction is our utmost priority.
@@ -130,7 +130,7 @@ export default function Landing() {
                   <h1 className="landing-about-heading heading-2 mb-2">
                     How we drive?
                   </h1>
-                  <p className="para-text">
+                  <p className="para-text text-justify">
                     We reimagine tech-solutions with innovative approach for
                     higher business efficiency. We aim for robust business
                     transformation of our client through cutting edge technology

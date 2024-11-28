@@ -54,7 +54,7 @@ function ChooseUs() {
             <div
               class="p-3 md:w-1/3 rounded-lg"
               style={{
-                width: "320px",
+                width: "300px",
                 background: `${card.color}`,
                 textAlign: "center",
               }}
