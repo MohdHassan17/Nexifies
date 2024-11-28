@@ -6,7 +6,7 @@ import toast from 'react-hot-toast';
 import Nexifies from '../images/Nexifies-Logo.png'
 import FooterImg from '../images/contact-form-img.svg'
 import { sendEmail } from '../utils/sendEmail';
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhone, FaPhoneVolume, FaWhatsapp } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneVolume, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 
@@ -100,7 +100,7 @@ function Footer() {
     <footer class="text-gray-600 body-font bg-secondary pt-10">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900" href='/'>
         <img src={Nexifies} class="w-20 h-20 text-white p-2 bg-white-500 rounded-full" alt="" />
         <span class="ml-3 text-xl heading-2">Nexifies</span>
       </a>
@@ -153,16 +153,16 @@ function Footer() {
       <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Nexifies
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-        <a class="text-gray-500">
+        <a class="text-gray-500" href='#'>
         <FaLinkedin />
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-500" href='#'>
           <FaInstagram/>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-500" href='#'>
           <FaWhatsapp/>
         </a>
-        <a class="ml-3 text-gray-500">
+        <a class="ml-3 text-gray-500" href='#'>
           <FaFacebook/>
         </a>
       </span>

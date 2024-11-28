@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
+import { Helmet } from "react-helmet";
 
 //Importing Components
 
@@ -18,16 +19,11 @@ import CyberImg from "../images/Cyber.jpg";
 import RPAImg from "../images/RPAImg.jpg";
 import AboutUsImg from "../images/about-us-hero.jpg";
 
-
 // Client Images
 
 import TestimonialCarousel from "../components/TestimonialCarousel";
 
-
 //Icon Imports
-
-
-
 
 export default function Landing() {
   const [currentSlide, setCurrentSlide] = useState(0); // Track the active slide
@@ -42,16 +38,22 @@ export default function Landing() {
     { id: 2, img: `${RPAImg}`, heading: "Cyber Security" },
   ];
 
-
-
-
-  
-
-
-
- 
   return (
     <>
+      <Helmet>
+        <title>
+          Nexifies - Transforming Businesses with Software Excellence
+        </title>
+        <meta
+          name="description"
+          content="Nexifies is a leading software development firm specializing in critical solutions for banks, MNCs, and organizations worldwide."
+        />
+        <meta
+          name="keywords"
+          content="software development, RPA, AI solutions, cybersecurity, financial software, Nexifies"
+        />
+        <link rel="canonical" href="https://www.nexifies.com/" />
+      </Helmet>
       {/* Landing Carousel */}
       <div className="landing-carousel-container">
         <Carousel
@@ -81,7 +83,10 @@ export default function Landing() {
                   <a href="#" className="btn primary-btn landing-carousel-btn">
                     Learn More
                   </a>
-                  <a href="#" className="btn secondary-btn landing-carousel-btn">
+                  <a
+                    href="#"
+                    className="btn secondary-btn landing-carousel-btn"
+                  >
                     Contact Now
                   </a>
                 </div>
@@ -149,24 +154,21 @@ export default function Landing() {
 
       {/* Landing Explore Serivices Section */}
 
-      <ExploreServices/>
+      <ExploreServices />
 
       {/* Why Choose Us Section */}
 
-      <ChooseUs/>
+      <ChooseUs />
 
       {/* Our Process Section */}
-      <ProcessFlow/>
+      <ProcessFlow />
 
       {/* Our Clients */}
-      <ClientCarousel/>
-    
+      <ClientCarousel />
+
       {/* Testimonial Section */}
 
-      <TestimonialCarousel/>
-
-
-            
+      <TestimonialCarousel />
     </>
   );
 }

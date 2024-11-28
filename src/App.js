@@ -3,6 +3,8 @@ import "./App.css";
 // Library Import
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 //Header & Footer Import
 import Header from "./components/Header";
@@ -31,12 +33,30 @@ import RPAImg from "./images/RPAImg.jpg";
 import FinanceImg from "./images/finance-service.jpg";
 import SupplyImg from "./images/supply-chain-service.jpg";
 import AIImg from "./images/AI-service.png";
+import { useEffect } from "react";
 
 
 
 
 
 function App() {
+
+  useEffect(() => {
+    // Select all section elements and add the 'data-aos' attribute
+    const sections = document.querySelectorAll('section');
+    sections.forEach((section,index) => {
+      section.setAttribute('data-aos', 'fade-up');
+     
+    });
+
+    // Initialize AOS with the "once" option
+    AOS.init({
+      once: true, // Ensures animation happens only once
+    });
+  }, []);
+
+
+
   const servicePages = [
     {
       id: 0,

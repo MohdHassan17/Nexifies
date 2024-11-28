@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 //Component Import
 import PageBanner from '../components/PageBanner'
@@ -14,6 +15,14 @@ import '../css/Career.css'
 function Career() {
   return (
     <>
+
+<Helmet>
+        <title>Careers at Nexifies | Join Our Innovative Team</title>
+        <meta name="description" content="Explore exciting career opportunities at Nexifies. Join our team of innovators and contribute to building critical software solutions for global organizations." />
+        <meta name="keywords" content="Nexifies careers, software development jobs, join Nexifies, software engineer opportunities" />
+        <meta name="author" content="Nexifies" />
+        <link rel="canonical" href="https://www.nexifies.com/careers" />
+      </Helmet>
     <PageBanner pageHeading="Careers"/>
 
     <section className="section py-24">

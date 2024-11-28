@@ -1,31 +1,30 @@
 import React from "react";
+import {Helmet} from 'react-helmet'
 
 // Component Import
-import SectionHeading from "../components/SectionHeading";
+
 import PageBanner from "../components/PageBanner";
 
 
 
 // Image Imports
 import Shakeel from "../images/shakeel-raza.png";
-import SaudiPak from '../images/client-img/saudi-pak.png'
+
 import TestimonialCarousel from "../components/TestimonialCarousel";
 
 
 function AboutUs() {
 
   
-  const scrollTestimonialCarousel = (direction) => {
-    const container = document.getElementById("test-carousel-container");
-    const scrollAmount = 300; // Adjust this value as needed for the scroll step
-    if (direction === "left") {
-      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    } else if (direction === "right") {
-      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
-  };
+
   return (
     <>
+     <Helmet>
+        <title>About Nexifies - Pioneers in Software Development</title>
+        <meta name="description" content="Learn more about Nexifies, our mission, vision, and expertise in delivering cutting-edge software solutions to global clients." />
+        <meta name="keywords" content="Nexifies, software development firm, technology innovation, about us" />
+        <link rel="canonical" href="https://www.nexifies.com/about-us" />
+      </Helmet>
       <PageBanner pageHeading="About Us" />
       <section class="text-gray-600 body-font section">
         <div class="container px-5 py-24 mx-auto flex flex-col">

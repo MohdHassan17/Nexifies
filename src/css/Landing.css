@@ -151,93 +151,104 @@
   
   
 /* Testimonial Carousel Styles */
-
 .test-carousel {
-    position: relative; /* Acts as a positioning reference for buttons */
-    width: 100%; /* Full width of the carousel */
-  }
-  
-  .test-carousel-container {
-    position: relative;
-    white-space: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    width: 90%;
-    margin: auto;
-  }
-  
-  .test-carousel-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-  }
-  
-  .test-carousel-item {
-    position: relative;
-    display: inline-block;
-    width: 35%;
-    min-width: 320px;
-    min-height: 400px;
-    height: auto;
-    max-height: 500px;
-   
-  
-    margin: 1.5%;
-  }
-  
-  .test-carousel-action {
-    position: absolute;
-    top: 50%; /* Center vertically relative to the carousel */
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    z-index: 2; /* Ensure it appears above other elements */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .test-carousel-action.left-action {
-    left: 10px; /* Position the left button */
-  }
-  
-  .test-carousel-action.right-action {
-    right: 10px; /* Position the right button */
-  }
-  .test-text{
-    text-wrap: wrap;
-    text-align: justify;
-    text-justify: inter-word;
-  }
+  position: relative; /* Acts as a positioning reference for buttons */
+  width: 100%; /* Full width of the carousel */
+}
 
-  .test-client{
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
+.test-carousel-container {
+  display: flex; /* Use flex to align carousel items horizontally */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  width: 90%;
+  margin: auto;
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
 
-    border-top: 1px solid lightslategrey;
-    padding: 5px
-  }
+.test-carousel-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
 
-  .test-client-img{
-    width: 60px;
-    height: 60px;
-  }
+.test-carousel-item {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Start content from the top */
+  width: 35%;
+  min-width: 320px;
+  min-height: 400px;
+  margin: 1.5%;
+  padding: 20px; /* Add padding for better spacing */
+  background: #f3f4f6; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
 
-  .test-client-name{
-    font-size: 0.9rem;
-  }
+.test-text {
+  flex: 1; /* Take up the remaining space in the .test-carousel-item */
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 20px; /* Add space below text */
+}
+
+.test-carousel-action {
+  position: absolute;
+  top: 50%; /* Center vertically relative to the carousel */
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  z-index: 2; /* Ensure it appears above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.test-carousel-action.left-action {
+  left: 10px; /* Position the left button */
+}
+
+.test-carousel-action.right-action {
+  right: 10px; /* Position the right button */
+}
+
+.test-client {
+  display: flex;
+  align-items: center; /* Align image and text vertically */
+  gap: 10px; /* Spacing between image and text */
+  border-top: 1px solid lightslategrey;
+  padding-top: 10px; /* Padding above the client section */
+  margin-top: auto; /* Pushes the .test-client section to the bottom */
+}
+
+.test-client-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Make image circular */
+}
+
+.test-client-name {
+  font-size: 1rem; /* Slightly larger text for better visibility */
+  font-weight: bold; /* Make the name stand out */
+}
+
+.test-client-title {
+  font-size: 0.9rem;
+  color: gray; /* Subtle color for the title */
+}
+
+.test-text {
+  text-wrap: wrap;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 
 
 

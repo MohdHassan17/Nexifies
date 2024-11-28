@@ -3,6 +3,7 @@ import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
 import { sendEmail } from '../utils/sendEmail'
 import toast from 'react-hot-toast'
+import { Helmet } from 'react-helmet'
 
 function ContactPage() {
 
@@ -33,6 +34,12 @@ function ContactPage() {
   
   return (
     <>
+    <Helmet>
+        <title>Contact Nexifies | Let's Build Something Great</title>
+        <meta name="description" content="Get in touch with Nexifies to discuss your software development needs. We're here to deliver cutting-edge solutions tailored for your business." />
+        <meta name="keywords" content="Contact Nexifies, software development inquiry, Nexifies support" />
+        <link rel="canonical" href="https://www.nexifies.com/contact" />
+      </Helmet>
     <PageBanner pageHeading="Contact Us" />
 
     <section class="text-gray-600 body-font relative">
