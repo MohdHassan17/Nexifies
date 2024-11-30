@@ -38,7 +38,7 @@ function Career() {
             <div className="career-qualification-container">
               <h1 className="career-heading">Qualification:</h1>
               <ul className="career-qualification-list">
-                <li className="career-qualification-item">Bachelor's degreed in Computer Science/IT</li>
+                <li className="career-qualification-item">Bachelor's degree in Computer Science/IT</li>
                 <li className="career-qualification-item">At least 3-4 years of experience in the field</li>
                 <li className="career-qualification-item">Able to operate various development tools (Git, Cloud Tools etc.)</li>
                 <li className="career-qualification-item">Excellent communication and time management</li>
