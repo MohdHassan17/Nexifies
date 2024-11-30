@@ -14,10 +14,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../css/Landing.css";
 
 // Image Imports
-import ChatBotImg from "../images/ChatBot.jpg";
-import CyberImg from "../images/Cyber.jpg";
-import RPAImg from "../images/RPAImg.jpg";
-import AboutUsImg from "../images/about-us-hero.jpg";
+import ChatBotImg from "../images/ChatBot.webp";
+import CyberImg from "../images/Cyber.webp";
+import RPAImg from "../images/RPAImg.webp";
+import AboutUsImg from "../images/about-us-hero.webp";
 
 // Client Images
 
@@ -80,11 +80,11 @@ export default function Landing() {
                 <h1 className="slide-heading-text"> {slide.heading}</h1>
 
                 <div className="slider-btn-container">
-                  <a href="#" className="btn primary-btn landing-carousel-btn">
+                  <a href="/services" className="btn primary-btn landing-carousel-btn">
                     Learn More
                   </a>
                   <a
-                    href="#"
+                    href="/contact-us"
                     className="btn secondary-btn landing-carousel-btn"
                   >
                     Contact Now

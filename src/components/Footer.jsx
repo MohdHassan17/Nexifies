@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 //Image Import
-import Nexifies from '../images/Nexifies-Logo.png'
+import Nexifies from '../images/Nexifies-Logo.webp'
 import FooterImg from '../images/contact-form-img.svg'
 import { sendEmail } from '../utils/sendEmail';
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneVolume, FaWhatsapp } from 'react-icons/fa';

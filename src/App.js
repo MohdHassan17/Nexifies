@@ -27,12 +27,12 @@ import ServicesPage from "./pages/ServicesPage";
 // Image Imports
 
 //Services Images
-import ChatBotImg from "./images/ChatBot.jpg";
-import CyberImg from "./images/Cyber.jpg";
-import RPAImg from "./images/RPAImg.jpg";
-import FinanceImg from "./images/finance-service.jpg";
-import SupplyImg from "./images/supply-chain-service.jpg";
-import AIImg from "./images/AI-service.png";
+import ChatBotImg from "./images/ChatBot.webp";
+import CyberImg from "./images/Cyber.webp";
+import RPAImg from "./images/RPAImg.webp";
+import FinanceImg from "./images/finance-service.webp";
+import SupplyImg from "./images/supply-chain-service.webp";
+import AIImg from "./images/AI-service.webp";
 import { useEffect } from "react";
 
 
@@ -48,6 +48,12 @@ function App() {
       section.setAttribute('data-aos', 'fade-up');
      
     });
+
+    const images = document.querySelectorAll('img')
+
+    images.forEach((image)=>{
+      image.setAttribute('loading', 'lazy')
+    })
 
     // Initialize AOS with the "once" option
     AOS.init({

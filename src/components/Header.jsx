@@ -6,7 +6,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { FaInstagram, FaWhatsapp, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
-import Nexifies from "../images/Nexifies-Logo.png";
+import Nexifies from "../images/Nexifies-Logo.webp";
 import "../css/HeadFooter.css";
 
 function classNames(...classes) {

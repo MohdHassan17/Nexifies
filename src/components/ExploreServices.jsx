@@ -6,12 +6,12 @@ import SectionHeading from "./SectionHeading";
 
 // Image Imports
 
-import ChatBotImg from "../images/ChatBot.jpg";
-import CyberImg from "../images/Cyber.jpg";
-import RPAImg from "../images/RPAImg.jpg";
-import FinanceImg from "../images/finance-service.jpg";
-import SupplyImg from "../images/supply-chain-service.jpg";
-import AIImg from "../images/AI-service.png";
+import ChatBotImg from "../images/ChatBot.webp";
+import CyberImg from "../images/Cyber.webp";
+import RPAImg from "../images/RPAImg.webp";
+import FinanceImg from "../images/finance-service.webp";
+import SupplyImg from "../images/supply-chain-service.webp";
+import AIImg from "../images/AI-service.webp";
 
 
 

@@ -8,7 +8,7 @@ import PageBanner from "../components/PageBanner";
 
 
 // Image Imports
-import Shakeel from "../images/shakeel-raza.png";
+import Shakeel from "../images/shakeel-raza.webp";
 
 import TestimonialCarousel from "../components/TestimonialCarousel";
 

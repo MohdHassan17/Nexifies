@@ -9,8 +9,8 @@ import '../css/Testimonial.css'
 import ExploreServices from '../components/ExploreServices'
 
 // Image Import
-import SaudiPak from '../images/client-img/saudi-pak.png'
-import FinSys from '../images/client-img/finsys.png'
+import SaudiPak from '../images/client-img/saudi-pak.webp'
+import FinSys from '../images/client-img/finsys.webp'
 
 function Testimonial() {
 
