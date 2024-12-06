@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 
 // Library Import
 import { Toaster } from "react-hot-toast";
@@ -33,7 +34,8 @@ import RPAImg from "./images/RPAImg.webp";
 import FinanceImg from "./images/finance-service.webp";
 import SupplyImg from "./images/supply-chain-service.webp";
 import AIImg from "./images/AI-service.webp";
-import { useEffect } from "react";
+import CustomDev from './images/custom-dev.webp'
+
 
 
 
@@ -135,7 +137,15 @@ Our technology provides real-time insights into critical operations, analyzing d
 
 Nexifies also offers automation capabilities that streamline processes, reducing manual intervention and improving operational speed. By optimizing resource utilization and eliminating inefficiencies, our AI solutions not only increase productivity but also support sustainable, long-term growth.
 
-Step into the future with Nexifies’ AI-powered solutions, where innovation meets intelligence. With our technology, you’re not just improving operations—you’re transforming them to be smarter, faster, and more reliable. Together, let’s build a smarter, more sustainable futur`,
+Step into the future with Nexifies’ AI-powered solutions, where innovation meets intelligence. With our technology, you’re not just improving operations—you’re transforming them to be smarter, faster, and more reliable. Together, let’s build a smarter, more sustainable future`,
+    },
+
+    {
+      id: 6,
+      link: "custom-software-development",
+      name: "Custom Software Development",
+      img: `${CustomDev}`,
+      text: 'Are you ready to turn your business dreams into practical realities? Then, our custom software development services are designed just for that. We recognize that each business faces unique challenges and has distinct goals. That’s why our team of skilled developers is committed to creating software that is personalized specifically to your needs. Our approach is all about being agile and flexible. This means we can adapt to new requirements as they arise during the development process to make sure that the final product remains perfectly aligned with your needs. We keep you involved every step of the way to make sure that the software we develop is exactly what you need to succeed. By choosing our custom software development services, you’re not just getting a developer; you’re gaining a partner dedicated to bringing your business vision to life.',
     },
   ];
 

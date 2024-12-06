@@ -69,12 +69,137 @@
 
 /* Explore Services Card */
 
-.explore-service-card{
-  transition: .2s ease-in-out;
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  width: 100%; /* Takes full width */
+  max-width: 1200px; /* Prevents it from being too wide */
+  margin: 0 auto; /* Centers horizontally */
+  overflow: hidden;
+  perspective: 1500px; /* Creates depth for 3D effect */
 }
-.explore-service-card:hover{
-  box-shadow: 0 0 15px gray;
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 450px;
+  transform-style: preserve-3d; /* Ensures 3D effect works */
+  transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
+
+/* Carousel Item */
+
+.carousel-item {
+  position: absolute;
+  width: 350px; /* Custom width for the images */
+  height: auto; /* Maintain aspect ratio */
+  text-align: center;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  opacity: 0; /* Start hidden */
+ 
+}
+
+/* Carousel Item Image */
+.carousel-item img {
+  width: 100%; /* Match the container width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images are cropped evenly if necessary */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visuals */
+  transition: transform 0.5s ease; /* Smooth scaling effect */
+}
+
+/* Active Item */
+.carousel-item.active {
+  transform: scale(1) translateX(0) rotateY(0deg);
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Next Item */
+.carousel-item.next {
+  transform: scale(0.9) translateX(125%) rotateY(-35deg);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+/* Previous Item */
+.carousel-item.prev {
+  transform: scale(0.9) translateX(-125%) rotateY(35deg);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+/* Hidden Items */
+.carousel-item.hidden {
+  transform: scale(0.5);
+  opacity: 0;
+  z-index: 1;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%; /* Center vertically relative to the carousel */
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  z-index: 2; /* Ensure it appears above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-btn.prev {
+  left: 10px; /* Adjusted for centering */
+}
+
+.carousel-btn.next {
+  right: 10px; /* Adjusted for centering */
+}
+
+/* Hover Effects */
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-container {
+    max-width: 100%; /* Adjusts to smaller screens */
+  }
+
+  .carousel {
+    height: 300px; /* Reduce height */
+  }
+
+  .carousel-item {
+    transform: scale(1) translateX(0) !important;
+    opacity: 1;
+    z-index: 3;
+    width: 90%; /* Full width for mobile screens */
+  }
+
+  .carousel-item.next,
+  .carousel-item.prev,
+  .carousel-item.hidden {
+    display: none; /* Hide items except the active one */
+  }
+
+  .carousel-btn {
+    padding: 10px;
+  }
+}
+
 
 
 /* Client List Carousel Styles */
@@ -148,7 +273,11 @@
     right: 10px; /* Position the right button */
   }
   
+  .client-carousel-action.left-action:hover {
+    background: rgba(0, 0, 0, 0.9);
+  }
   
+
   
 /* Testimonial Carousel Styles */
 .test-carousel {
@@ -217,6 +346,11 @@
 .test-carousel-action.right-action {
   right: 10px; /* Position the right button */
 }
+
+.test-carousel:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
 
 .test-client {
   display: flex;
