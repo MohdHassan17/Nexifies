@@ -17,28 +17,28 @@ function ChooseUs() {
           name: "Personalized Products",
           img: BsBoxFill,
           text: "Our services are distinguished by their bespoke nature, meticulously crafted to align with the unique.",
-          color: "#2b8c21",
+          color: "#770058",
         },
         {
           id: 1,
           name: "Agile Methodology",
           img: GiProcessor,
           text: "Our agile approach ensures flexibility and adaptability throughout the development process.",
-          color: "#3063f4",
+          color: "#084C61",
         },
         {
           id: 2,
           name: "Cutting-Edge Softwares",
           img: SiKnowledgebase,
           text: "Embrace the latest in technology with our services. We stay ahead of industry trends.",
-          color: "#de2b2e",
+          color: "#09814A",
         },
         {
           id: 3,
           name: "Scalable Solutions",
           img: GiStack,
           text: "Quality and scalability are at the core of our services.",
-          color: "#f58d06",
+          color: "#D00000",
         },
       ];
   return (
