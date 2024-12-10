@@ -273,9 +273,9 @@
     right: 10px; /* Position the right button */
   }
   
-  .client-carousel-action.left-action:hover {
+  /* .client-carousel-action.left-action:hover {
     background: rgba(0, 0, 0, 0.9);
-  }
+  } */
   
 
   
@@ -312,6 +312,15 @@
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: all .3s ease;
+}
+
+.test-carousel-item:hover{
+
+  border: 1px solid slategrey;
+  box-shadow: 0 0 5px slategray;
+  transform: scale(1.05);
+  
 }
 
 .test-text {
@@ -347,9 +356,7 @@
   right: 10px; /* Position the right button */
 }
 
-.test-carousel:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
+
 
 
 .test-client {
@@ -359,12 +366,15 @@
   border-top: 1px solid lightslategrey;
   padding-top: 10px; /* Padding above the client section */
   margin-top: auto; /* Pushes the .test-client section to the bottom */
+
 }
 
+
+
 .test-client-img {
-  width: 60px;
   height: 60px;
-  border-radius: 50%; /* Make image circular */
+ 
+ /* Make image circular */
 }
 
 .test-client-name {

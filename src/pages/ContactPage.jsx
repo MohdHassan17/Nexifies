@@ -1,6 +1,12 @@
 import React, {useRef} from 'react'
+
+// Importing Components
 import PageBanner from '../components/PageBanner'
 import SectionHeading from '../components/SectionHeading'
+import ExploreServices from '../components/ExploreServices'
+import TestimonialCarousel from '../components/TestimonialCarousel'
+
+// Importing Libraries
 import { sendEmail } from '../utils/sendEmail'
 import toast from 'react-hot-toast'
 import { Helmet } from 'react-helmet'
@@ -74,7 +80,7 @@ function ContactPage() {
           </div>
         </div>
         <div class="p-2 w-full">
-          <input value="Send Message" type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center primary-btn"/>
+          <input value="Send Message" type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg text-center primary-btn cursor-pointer"/>
         </div>
        
       </div>
@@ -84,6 +90,8 @@ function ContactPage() {
   </div>
 </section>
 
+<ExploreServices/>
+<TestimonialCarousel/>
     
     </>
   )
